@@ -5,6 +5,6 @@ var readingLine = 1;
 
 function interpretate()
 {
-    <script src="interpretator">
+    <script src="interpretator.js"></script>
         //idk is this working? ^^
 }
