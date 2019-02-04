@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Editor</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 	
 	<body>
@@ -10,6 +11,7 @@
 		<table>
 			<tr>
 				<td>
+					<form name = "web">
 					<textarea name="scriptEditor" cols="..." rows="..." style="color: #777FFF; background-color: #222222; font-size: 12pt; font-family: Consolas; width: 45%; height: 800px; border-style: line; border-color: "White"; border-width: 2px"> tell("Hello world!")
 					</textarea>
 				</td>	
@@ -33,28 +35,46 @@
 		</table>
 		<script>	
 			//Welcome to core of this lang
-			alert("Remember that work is in progress! \n SCode made by VenoDev/Erixo \n published at MIT license"); // slash n is ENTER inside alerts, prompts and confirms
+			alert("Remember that work is in progress! \nSCode made by VenoDev/Erixo \nPublished at MIT license"); // slash n is ENTER inside alerts, prompts and confirms
 
 			var readingLine = 1;
 			var readingLetter = "";
 			var readingString = "";
+			var totalLines = 0;
 			
 			var HelperVar1
 			var HelperVar2
 			
 			var variablesNames = [];
 			var variablesValues = [];
-
+			
+			//Counting lines in textarea
+			function countLines(web.scriptEditor) {
+  				var text = $(web.scriptEditor).val();
+  				var lines = text.split("\n");
+ 				var count = 0;
+  				for (var i = 0; i < lines.length-1; i++)
+				{
+    				if (lines[i].trim()!="" && lines[i].trim()!=null)
+					{
+      					count++;
+    				}
+  				}
+  				TotalLines = count;
+				alert(TotalLines)
+			}
+			
+			//START
 			function start()
 			{
     			readingLine = "";
     			readingLetter = "";
     			readingLineString = "";
-    			while(readingLine < Editor.scriptEditor)
-    			{
-        			break;
-    			}
-    
+    			//while(readingLine < Editor.scriptEditor.)
+    			//{
+        		//	break;
+    			//}
+    			countLines
         		//idk is this working? ^^
 			}
 			
