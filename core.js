@@ -5,12 +5,12 @@ var readingLine = 1;
 var readingLetter = "";
 var readingString = "";
 
-function interpretate()
+function start()
 {
     readingLine = "";
     readingLetter = "";
     readingLineString = "";
-    while( == true)
+    while(readingLine < editor.)
     {
         
     }
