@@ -49,20 +49,10 @@
 			var variablesValues = [];
 			
 			//Counting lines in textarea
-			function countLines(web.scriptEditor) {
-  				var text = $(web.scriptEditor).val();
-  				var lines = text.split("\n");
- 				var count = 0;
-  				for (var i = 0; i < lines.length-1; i++)
-				{
-    				if (lines[i].trim()!="" && lines[i].trim()!=null)
-					{
-      					count++;
-    				}
-  				}
-  				TotalLines = count;
-				alert(TotalLines)
-			}
+			var text = $("#myTextArea").val();   
+			var lines = text.split("\n");
+			totalLines = lines.length;
+			alert(totalLines)
 			
 			//START
 			function start()
