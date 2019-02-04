@@ -11,13 +11,13 @@
 			<tr>
 				<td>
 					<form name="Editor">
-					<textarea name="scriptEditor" cols="..." rows="..." style="color: #777FFF; background-color: #222222; font-size: 12pt; font-family: Consolas; width: 500px; height: 800px; border-style: line; border-color: "White"; border-width: 2px"> tell("Hello world!")
+					<textarea name="scriptEditor" cols="..." rows="..." style="color: "orange"; background-color: #222222; font-size: 12pt; font-family: Consolas; width: 500px; height: 800px; border-style: line; border-color: "orange"; border-width: 2px"> tell("Hello world!")
 					</textarea>
 				</td>	
 
 				<td>
 					
-						<input type="button" value="Play" onClick="start()" style="background-color: #448FFF; font-size: 14pt; width: 80px; border-style: none">
+						<input type="button" value="Run" onClick="start()" style="background-color: #448FFF; color: "orange" font-size: 14pt; width: 120px ; border-style: none">
 					</form>
 				</td>
 			</tr>
@@ -29,23 +29,26 @@
 		<script>
 			
 			//Welcome to core of this lang
-			alert("Remember that work is in progress! /n SCode made by VenoDev/Erixo /n published at MIT license"); // slash n is ENTER inside alerts, prompts and confirms
+			alert("Remember that work is in progress! \n SCode made by VenoDev/Erixo \n published at MIT license"); // slash n is ENTER inside alerts, prompts and confirms
 
 			var readingLine = 1;
 			var readingLetter = "";
 			var readingString = "";
+			
+			var variablesNames = [];
+			var variablesValues = [];
 
 			function start()
 			{
-    		readingLine = "";
-    		readingLetter = "";
-    		readingLineString = "";
-    		while(readingLine < Editor.scriptEditor)
-    		{
-        		break;
-    		}
+    			readingLine = "";
+    			readingLetter = "";
+    			readingLineString = "";
+    			while(readingLine < Editor.scriptEditor)
+    			{
+        			break;
+    			}
     
-        	//idk is this working? ^^
+        		//idk is this working? ^^
 			}
 			
 		</script>
