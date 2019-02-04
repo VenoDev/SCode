@@ -1,3 +1,3 @@
-## Welcome to our syntax
+# Welcome to our syntax
 
-# Commands
+### Commands
